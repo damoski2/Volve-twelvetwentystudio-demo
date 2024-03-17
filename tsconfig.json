@@ -16,6 +16,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "src/components/compound/HomeScaleSection.jsx", "src/components/helper/Parallax.jsx", "src/components/compound/HomeInvestmentCriteria.jsx"],
   "exclude": ["node_modules"]
 }

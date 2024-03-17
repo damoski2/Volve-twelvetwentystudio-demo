@@ -8,11 +8,17 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        "Founders-Grotesk-Bold": ["Founders-Grotesk-Bold", "sans-serif"],
+        "Founders-Grotesk-Regular": ["Founders-Grotesk-Regular", "sans-serif"],
+        "Founders-Grotesk-Light": ["Founders-Grotesk-Light", "sans-serif"],
+        "Founders-Grotesk-Medium": ["Founders-Grotesk-Medium", "sans-serif"],
       },
+      colors: {
+        "brand-orange": "#FF4E00",
+        "brand-dark": "#1C153B",
+        "brand-light": "#F7F7F7",
+      }
     },
   },
   plugins: [],
