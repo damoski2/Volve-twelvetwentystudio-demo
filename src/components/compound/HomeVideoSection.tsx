@@ -2,7 +2,21 @@ import React from "react";
 
 const HomeVideoSection = () => {
   return (
-    <div className="py-[136px] sm:px-[78px] px-[20px] bg-[#1c153b] relative -top-[10px] rounded-t-[26px] w-full"></div>
+    <div className="bg-[#1c153b] w-full h-screen relative">
+      <video
+        autoPlay={true}
+        loop
+        className="h-full absolute w-full top-0 left-0 object-cover"
+        id=""
+        playsInline
+        muted
+      >
+        <source src={`/videos/Circle_animation_extended.mp4`} type="video/mp4" />
+        <source src="example.webm" type="video/webm" />
+        <track kind="captions" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
   );
 };
 

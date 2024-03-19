@@ -13,6 +13,7 @@ interface Props {
 
 const initialState = {
   menuOpen: false as boolean,
+  dispatch: (() => {}) as Dispatch<any>,
 };
 
 export const GlobalContext = createContext(initialState);
@@ -22,7 +23,7 @@ export const GlobalProvider = ({ children }: Props) => {
     ...initialState,
   });
 
-  const contextValue = {
+  const contextValue: any = {
     ...state,
     dispatch,
   };

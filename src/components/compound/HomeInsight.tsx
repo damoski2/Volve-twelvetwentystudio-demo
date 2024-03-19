@@ -79,7 +79,7 @@ const HomeInsight = () => {
 
   return (
     <div
-      className="pt-[136px] pb-[236px] bg-[#f4ede7] relative -top-[30px] rounded-t-[26px] min-h-[120vh] h-full w-full"
+      className="pt-[136px] pb-[236px] bg-[#f4ede7] relative -top-[30px] rounded-t-[26px] min-h-[125vh] h-full w-full"
       id="home-insight"
     >
       <div className="sm:px-[78px] px-[20px]">
