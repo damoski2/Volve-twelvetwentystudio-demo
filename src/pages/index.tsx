@@ -7,7 +7,8 @@ import {
   HomeScaleSection,
   HomeBrandSection,
   HomeInvestmentCriteria,
-  HomeInsight
+  HomeInsight,
+  HomeVideoSection
 } from "../components/imports";
 import Parallax from "@/components/helper/Parallax";
 
@@ -27,6 +28,7 @@ export default function Home() {
 
       <HomeInvestmentCriteria />
       <HomeInsight />
+      <HomeVideoSection />
     </Layout>
   );
 }

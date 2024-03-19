@@ -21,6 +21,7 @@
     "react-dom": "^18",
     "react-faq-component": "^1.3.4",
     "react-indiana-drag-scroll": "^2.2.0",
+    "react-slick": "^0.30.2",
     "rolly.js": "^0.4.0",
     "split-type": "^0.3.4"
   },
@@ -28,6 +29,7 @@
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",
+    "@types/react-slick": "^0.23.13",
     "autoprefixer": "^10.0.1",
     "eslint": "^8",
     "eslint-config-next": "14.1.3",

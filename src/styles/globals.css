@@ -52,11 +52,13 @@ h4, li {
 
 body {
   background-color: #f4ede7;
+  overflow-x: hidden;
 }
 
 html.lenis,
 html.lenis body {
   height: auto;
+  overflow-x: hidden;
 }
 
 .lenis.lenis-smooth {
@@ -258,25 +260,38 @@ html.lenis body {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-
- .styles_row-title-text__1MuhU{
+.styles_row-title-text__1MuhU {
   padding: 20px 0 20px 0;
 }
 
-.styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c{
-  border-bottom: 1px solid rgba(202, 210, 226, .2) !important;
+.styles_faq-row-wrapper__3vA1D .styles_faq-row__2YF3c {
+  border-bottom: 1px solid rgba(202, 210, 226, 0.2) !important;
 }
 
-.faq-row .styles_faq-row__2YF3c{
-  border-bottom: 1px solid rgba(202, 210, 226, .2) !important;
+.faq-row .styles_faq-row__2YF3c {
+  border-bottom: 1px solid rgba(202, 210, 226, 0.2) !important;
 }
 
-.styles_faq-row-wrapper__3vA1D .styles_row-body__1NvUo .styles_faq-row__2YF3c .styles_row-title__1YiiY .styles_icon-wrapper__2cftw{
+.styles_faq-row-wrapper__3vA1D
+  .styles_row-body__1NvUo
+  .styles_faq-row__2YF3c
+  .styles_row-title__1YiiY
+  .styles_icon-wrapper__2cftw {
   position: relative !important;
   top: -3px !important;
 }
 
+.insight-woman-div {
+  background: url(../../assets/images/insight-lady.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: background-size 2s ease-in-out;
+}
 
+.insight-woman-div:hover {
+  background-size: 160%;
+}
 
 @media (max-width: 768px) {
   .focus-hover-container {

@@ -4,8 +4,42 @@ import Link from "next/link";
 import { gsap, ScrollTrigger } from "../../../lib/gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollContainer from "react-indiana-drag-scroll";
-
+import insight_woman from "../../../assets/images/insight-lady.jpeg";
+import Slider from "react-slick";
 gsap.registerPlugin(ScrollTrigger);
+
+var settings = {
+  dots: false,
+  infinite: false,
+  speed: 500,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3,
+        infinite: true,
+      },
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        initialSlide: 2,
+      },
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
+};
 
 const HomeInsight = () => {
   useGSAP(() => {
@@ -45,80 +79,94 @@ const HomeInsight = () => {
 
   return (
     <div
-      className="sm:px-[78px] px-[20px] pt-[136px] pb-[236px] bg-[#f4ede7] relative -top-[30px] rounded-t-[26px] min-h-[100vh]"
+      className="pt-[136px] pb-[236px] bg-[#f4ede7] relative -top-[30px] rounded-t-[26px] min-h-[120vh] h-full w-full"
       id="home-insight"
     >
-      <div className=" relative slidersection">
-        <div className="carouseltextcnt absolute top-0">
-          <div className="carouseltextslider flex gap-[70px] items-start">
-            <div className="slidetext1 flex gap-[70px] items-center">
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                SCALE-UP
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                BIG
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                IDEAS
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                TO
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                CREATE
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                IMPACT
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                TOGETHER
-              </h1>
-            </div>
-            <div className="slidetext2 flex gap-[70px] items-center">
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                SCALE-UP
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                BIG
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                IDEAS
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                TO
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                CREATE
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                IMPACT
-              </h1>
-              <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap">
-                TOGETHER
-              </h1>
+      <div className="sm:px-[78px] px-[20px]">
+        <div className=" relative slidersection">
+          <div className="carouseltextcnt absolute top-0">
+            <div className="carouseltextslider flex gap-[70px] items-start">
+              <div className="slidetext1 flex gap-[70px] items-center">
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  SCALE-UP
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  BIG
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  IDEAS
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  TO
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  CREATE
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  IMPACT
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  TOGETHER
+                </h1>
+              </div>
+              <div className="slidetext2 flex gap-[70px] items-center">
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  SCALE-UP
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  BIG
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  IDEAS
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  TO
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  CREATE
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  IMPACT
+                </h1>
+                <h1 className="slide-text text-brand-orange text-[227px] whitespace-nowrap relative">
+                  TOGETHER
+                </h1>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="relative top-[340px]">
-        <div className="flex justify-between items-center ">
-          <h2 className="text-brand-orange text-[38px] font-Founders-Grotesk-Medium">
-            INSIGHTS
-          </h2>
-          <Link href="#">
-            <button className="lg:block hidden font-bold px-8 h-[47px] text-center rounded-[3em] hover:bg-[#ff4e00] hover:text-white bg-white text-[#ff4e00] duration-100">
-              ALL INSIGHTS
-            </button>
-          </Link>
+        <div className="relative top-[340px] w-full">
+          <div className="flex justify-between items-center ">
+            <h2 className="text-brand-orange text-[38px] font-Founders-Grotesk-Medium">
+              INSIGHTS
+            </h2>
+            <Link href="#">
+              <button className="lg:block hidden font-bold px-8 h-[47px] text-center rounded-[3em] hover:bg-[#ff4e00] hover:text-white bg-white text-[#ff4e00] duration-100">
+                ALL INSIGHTS
+              </button>
+            </Link>
+          </div>
         </div>
-
-        <ScrollContainer className="">
-          {Array.from({ length: 6 }).map((_, index) => (
-            <div className="" key={index}></div>
-          ))}
-        </ScrollContainer>
       </div>
+      <ScrollContainer className="relative top-[340px]">
+        <div className="w-full flex items-center gap-[35px] mt-[40px]">
+          {Array.from({ length: 6 }).map((_, index) => (
+            <div key={index} className="cursor-pointer">
+              <div className="relative rounded-[20px] h-[355px] min-w-[500px] insight-woman-div flex">
+                <div className="self-end p-4">
+                  <span className="text-brand-orange text-[15px] px-4 py-[7px] rounded-[4em] bg-[#ffffffe6] text-xs font-bold text-center">
+                    INSIGHTS
+                  </span>
+                </div>
+              </div>
+              <p className="font-[17px] mt-4 text-brand-orange">
+                Product in de spotlight: Acceptance & Risk
+              </p>
+            </div>
+          ))}
+        </div>
+      </ScrollContainer>
     </div>
   );
 };

@@ -72,7 +72,7 @@ const HomeBrandSection = () => {
               {logos.map((logo, index) => (
                 <div
                   key={index}
-                  className="w-[292.8px] h-[292.8px] rounded-[10px] flex items-center justify-center slide-card"
+                  className="w-[292.8px] h-[292.8px] rounded-[10px] flex items-center justify-center slide-card relative"
                 >
                   <Image src={logo} alt="" className="w-[40%] h-[40%]" />
                 </div>
@@ -82,7 +82,7 @@ const HomeBrandSection = () => {
               {logos.map((logo, index) => (
                 <div
                   key={index}
-                  className="w-[292.8px] h-[292.8px] rounded-[10px] flex items-center justify-center slide-card"
+                  className="w-[292.8px] h-[292.8px] rounded-[10px] flex items-center justify-center slide-card relative"
                 >
                   <Image src={logo} alt="" className="w-[40%] h-[40%]" />
                 </div>
