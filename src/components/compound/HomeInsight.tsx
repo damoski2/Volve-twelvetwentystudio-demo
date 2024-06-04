@@ -152,15 +152,22 @@ const HomeInsight = () => {
       <ScrollContainer className="relative top-[340px]">
         <div className="w-full flex items-center gap-[35px] mt-[40px]">
           {Array.from({ length: 6 }).map((_, index) => (
-            <div key={index} className="cursor-pointer">
-              <div className="relative rounded-[20px] h-[355px] min-w-[500px] insight-woman-div flex">
-                <div className="self-end p-4">
-                  <span className="text-brand-orange text-[15px] px-4 py-[7px] rounded-[4em] bg-[#ffffffe6] text-xs font-bold text-center">
-                    INSIGHTS
-                  </span>
+            <div key={index} className="cursor-pointer relative">
+              <div className="relative h-[315px] min-w-[440px] flex">
+                <div className="relative w-full h-full rounded-[20px] overflow-hidden" >
+                  <Image
+                    src={insight_woman}
+                    alt=""
+                    className="absolute w-full h-full object-cover top-0 left-0 transform scale-100 transition-transform duration-300 ease-in-out hover:scale-105"
+                  />
+                  <div className="self-end p-4 absolute bottom-3">
+                    <span className="text-brand-orange text-[15px] px-4 py-[7px] rounded-[4em] bg-[#ffffffe6] text-xs font-bold text-center">
+                      INSIGHTS
+                    </span>
+                  </div>
                 </div>
               </div>
-              <p className="font-[17px] mt-4 text-brand-orange">
+              <p className="font-[17px] mt-4 text-brand-orange relative">
                 Product in de spotlight: Acceptance & Risk
               </p>
             </div>
